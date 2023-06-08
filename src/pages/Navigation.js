@@ -2,15 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Navbar from '../components/Navbar';
 
-const NavigationMenu = ({ children }) => (
+const Navigation = ({ children }) => (
   <div>
     <Navbar />
     {children}
   </div>
 );
 
-NavigationMenu.propTypes = {
+Navigation.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default NavigationMenu;
+export default Navigation;

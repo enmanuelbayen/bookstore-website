@@ -2,15 +2,24 @@ import { createBrowserRouter } from 'react-router-dom';
 import React from 'react';
 import Categories from '../pages/Categories';
 import App from '../App';
+import Navigation from '../pages/Navigation';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: (
+      <Navigation>
+        <App />
+      </Navigation>
+    ),
   },
   {
     path: '/Categories',
-    element: <Categories />,
+    element: (
+      <Navigation>
+        <Categories />
+      </Navigation>
+    ),
   },
 ]);
 
