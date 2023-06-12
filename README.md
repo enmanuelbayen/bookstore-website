@@ -1,12 +1,12 @@
-# [XXX]
+# [Book Store]
 
-.............
+Creating a SPA with CRA and redux that is based on store to store your books that you are currently reading and that you have already completed. 
 
 <a name="readme-top"></a>
 
 <div align="center">
 
-  <h3 id="title"><b>[XXX]</b></h3>
+  <h3 id="title"><b>Book Store</b></h3>
 
 </div>
 
@@ -34,8 +34,9 @@
 
 
 
-# 📖  [XXXX]   <a name="about-project"></a>
+# 📖  Book Store   <a name="about-project"></a>
 
+You can have your own place to add books that you are currently reading and keep updated the progress you take in your readings!
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -61,9 +62,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-1 ...
-2 .... 
-3 ...
+1 SPA With CRA 
+2 Redux for reducers for the books and categories
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,7 +92,7 @@ Use these commands:
 
 ```sh
   cd my-folder
-  git clone xxxxx
+  git clone git@github.com:enmanuelbayen/bookstore-website.git
 ```
 
 ### Install
@@ -153,7 +153,7 @@ I use Githud pages for the deployment of this web page.
 
 Contributions, issues, and feature requests are welcome! Will help me a lot to improve my coding skills.
 
-Feel free to check the [issues page](../../issues/)
+Feel free to check the [issues page](https://github.com/enmanuelbayen/bookstore-website/issues)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
