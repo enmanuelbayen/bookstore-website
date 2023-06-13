@@ -1,7 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Book = ({ title, author }) => (
+const Book = ({ title, author }) =>{ 
+
+
+  return (
   <section className="book">
     <div>
       <h3 className="book-title">{title}</h3>
@@ -9,7 +12,8 @@ const Book = ({ title, author }) => (
     </div>
     <button type="button" className="button" id="deleteBttn">Remove</button>
   </section>
-);
+)
+};
 Books.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
