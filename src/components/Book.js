@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Books = ({ title, author }) => (
+const Book = ({ title, author }) => (
   <section className="book">
     <div>
       <h3 className="book-title">{title}</h3>
@@ -15,4 +15,4 @@ Books.propTypes = {
   author: PropTypes.string.isRequired,
 };
 
-export default Books;
+export default Book;
