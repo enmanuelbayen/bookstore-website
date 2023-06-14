@@ -18,6 +18,7 @@ const Form = () => {
       item_id: uuidv4(),
       title,
       author,
+      category: 'Undefined',
     };
 
     dispatch(postBook(newBook));
@@ -41,7 +42,7 @@ const Form = () => {
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
         />
-        <button type="button" className="button" id="addBttn">ADD BOOK</button>
+        <button type="submit" className="button" id="addBttn">ADD BOOK</button>
       </form>
     </div>
   );
