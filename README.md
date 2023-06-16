@@ -67,12 +67,6 @@ You can have your own place to add books that you are currently reading and keep
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-Not yet.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -112,10 +106,6 @@ Run command:
 To run the project, execute the following command:
 
 npm start
-
-### Run tests
-
-Work in progress.
 
 ### Deployment
 
