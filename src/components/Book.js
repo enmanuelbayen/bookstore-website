@@ -11,20 +11,44 @@ const Book = ({ id, title, author }) => {
   };
 
   return (
-    <section className="book">
-      <div>
-        <h3 className="book-title">{title}</h3>
-        <p className="book-author">{author}</p>
+    <div className="book flex">
+      <div className="books-container flex">
+        <div>
+          <h3 className="book-title">{title}</h3>
+          <p className="book-author">{author}</p>
+        </div>
+        <div className="modifyBttns-box flex">
+          <button type="button" className="modifyBttns">Comments</button>
+          <span />
+          <button
+            type="button"
+            className="modifyBttns"
+            id="deleteBttn"
+            onClick={handleRemoveBook}
+          >
+            Remove
+          </button>
+          <span />
+          <button type="button" className="modifyBttns">Edith</button>
+        </div>
       </div>
-      <button
-        type="button"
-        className="button"
-        id="deleteBttn"
-        onClick={handleRemoveBook}
-      >
-        Remove
-      </button>
-    </section>
+
+      <div className="books-progress-box">
+        <div className="progressBar">
+          <p>dibujo</p>
+          <div>
+            <p>64%</p>
+            <p>Completed</p>
+          </div>
+        </div>
+        <span />
+        <div>
+          <h4>CURRENT CHAPTER</h4>
+          <p>Chapter 17</p>
+          <button type="button">UPDATE PROGRESS</button>
+        </div>
+      </div>
+    </div>
   );
 };
 Book.propTypes = {
