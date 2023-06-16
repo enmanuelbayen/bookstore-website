@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
+import 'react-circular-progressbar/dist/styles.css';
+import { CircularProgressbar } from 'react-circular-progressbar';
 import { deleteBook } from '../redux/books/booksSlice';
 
 const Book = ({ id, title, author }) => {
@@ -9,6 +11,8 @@ const Book = ({ id, title, author }) => {
   const handleRemoveBook = () => {
     dispatch(deleteBook(id));
   };
+
+  const percentage = 66;
 
   return (
     <div className="book flex">
@@ -33,19 +37,23 @@ const Book = ({ id, title, author }) => {
         </div>
       </div>
 
-      <div className="books-progress-box">
-        <div className="progressBar">
-          <p>dibujo</p>
+      <div className="books-progress-box flex">
+        <div className="progressBar flex">
+          <div style={{ width: 60, height: 60 }}>
+            <CircularProgressbar value={percentage} text={`${percentage}%`} />
+          </div>
           <div>
-            <p>64%</p>
-            <p>Completed</p>
+            <p className="porcentage">66%</p>
+            <p className="completed-progress">Completed</p>
           </div>
         </div>
         <span />
-        <div>
-          <h4>CURRENT CHAPTER</h4>
-          <p>Chapter 17</p>
-          <button type="button">UPDATE PROGRESS</button>
+        <div className="chapter-box flex">
+          <div>
+            <h4 className="current-chapter">CURRENT CHAPTER</h4>
+            <p className="nro-chapter">Chapter 17</p>
+          </div>
+          <button type="button" className="bttnUpdate">UPDATE PROGRESS</button>
         </div>
       </div>
     </div>
