@@ -18,6 +18,7 @@ const Book = ({ id, title, author }) => {
     <div className="book flex">
       <div className="books-container flex">
         <div>
+          <h4 className="categorie-title">Action</h4>
           <h3 className="book-title">{title}</h3>
           <p className="book-author">{author}</p>
         </div>
@@ -40,7 +41,7 @@ const Book = ({ id, title, author }) => {
       <div className="books-progress-box flex">
         <div className="progressBar flex">
           <div style={{ width: 60, height: 60 }}>
-            <CircularProgressbar value={percentage} text={`${percentage}%`} />
+            <CircularProgressbar value={percentage} />
           </div>
           <div>
             <p className="porcentage">66%</p>
