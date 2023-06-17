@@ -27,9 +27,9 @@ const Form = () => {
   };
 
   return (
-    <div>
-      <h3 className="book-title">Add new book</h3>
-      <form onSubmit={handleSubmit}>
+    <div className="form-container">
+      <h3 className="form-title">ADD NEW BOOK</h3>
+      <form className="addBook-form flex" onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Book Title"

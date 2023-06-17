@@ -18,7 +18,7 @@ const BookList = () => {
   }
 
   return (
-    <div>
+    <section>
       {books.map((book) => (
         <Book
           key={book.item_id}
@@ -27,7 +27,7 @@ const BookList = () => {
           author={book.author}
         />
       ))}
-    </div>
+    </section>
   );
 };
 
